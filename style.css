@@ -1,0 +1,44 @@
+aside {
+    background-color: black;
+    color: white;
+    height: 2000px;
+    width: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Intro {
+    background-color: purple;
+    background-image: url(".../balon.jpg");
+    height: 300px;
+    width: 1700px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color:white;
+}
+
+
+
+.tablero {
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button{
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
