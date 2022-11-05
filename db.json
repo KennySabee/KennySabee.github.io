@@ -1,0 +1,30 @@
+{
+  "weekend": [
+    {
+      "id": 1,
+      "value": "8 am",
+      "description": "monday"
+    },
+
+    {
+      "value": "8 am",
+      "description": "tuesday",
+      "id": 2
+    },
+    {
+      "value": "8 am",
+      "description": "wednesday",
+      "id": 3
+    },
+    {
+      "value": "8 am",
+      "description": "thrusday",
+      "id": 4
+    },
+    {
+      "value": "8 am",
+      "description": "friday",
+      "id": 5
+    }
+  ]
+}
