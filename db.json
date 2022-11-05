@@ -1,5 +1,5 @@
 {
-  "weekend": [
+  "Hora entrada": [
     {
       "id": 1,
       "value": "8 am",
@@ -26,5 +26,61 @@
       "description": "friday",
       "id": 5
     }
-  ]
+  ],
+  "Hora salida": [
+      {
+        "id": 1,
+        "value": "8 am",
+        "description": "monday"
+      },
+  
+      {
+        "value": "8 am",
+        "description": "tuesday",
+        "id": 2
+      },
+      {
+        "value": "8 am",
+        "description": "wednesday",
+        "id": 3
+      },
+      {
+        "value": "8 am",
+        "description": "thrusday",
+        "id": 4
+      },
+      {
+        "value": "8 am",
+        "description": "friday",
+        "id": 5
+      }
+    ],
+    "Faltas": [
+      {
+        "id": 1,
+        "value": "8 am",
+        "description": "monday"
+      },
+  
+      {
+        "value": "8 am",
+        "description": "tuesday",
+        "id": 2
+      },
+      {
+        "value": "8 am",
+        "description": "wednesday",
+        "id": 3
+      },
+      {
+        "value": "8 am",
+        "description": "thrusday",
+        "id": 4
+      },
+      {
+        "value": "8 am",
+        "description": "friday",
+        "id": 5
+      }
+    ]
 }
