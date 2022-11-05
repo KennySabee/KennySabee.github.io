@@ -1,4 +1,28 @@
+let personajesLabel = [],
+  especiesLabel = [],
+  generoLabel = [];
 
+
+
+// GRAFICO DE CHART JS
+async function personajesChart() {
+  await getApiData();
+
+  const grafico = document.getElementById("myChart").getContext("2d");
+  const myChart = new Chart(grafico, {
+    type: 'pie',
+    data: {
+        datasets: [{
+        data: {
+            personajesLabel
+        }
+        }]
+    }
+    })}
+    
+    
+
+personajesChart();
 //     type: "bar",
 //     data: {
 //       labels: personajesLabel,
@@ -38,4 +62,9 @@ async function getApiData() {
     const gender = barChartData.results.map((x) => x.gender);
   
     console.log(character, species);
-  }
+    personajesLabel = character;
+  especiesLabel = species;
+  generoLabel = gender;
+}
+console.log(personajesLabel)
+  
