@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Calendario escolar</title>
-    <script src= "/script.js" ></script>
     <link rel="stylesheet" href="./style.css"/></head>
+    <html rel="chartsheet" href="./chart.html"></html>
 
 <body>
     <aside>
@@ -31,7 +31,40 @@
                   </div>
                 </div>
                </form>
-               <div id="grafico"></div>
+               <div id="grafico">
+                <script type="text/javascript">
+                    window.onload = function () {
+                    
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                        theme: "entrada", // "dia1", "dia2", "dia3","dia4","dia5"
+                        animationEnabled: false, // change to true		
+                        title:{
+                            text: "Estudiantes en clase"
+                        },
+                        data: [
+                        {
+                            // Change type to "bar", "area", "spline", "pie",etc.
+                            type: "column",
+                            dataPoints: [
+                                { label: "Monday",  y: 5  },
+                                { label: "Tuesday", y: 6  },
+                                { label: "Wednesday", y: 4  },
+                                { label: "Thursday",  y: 2  },
+                                { label: "Friday",  y: 3  }
+                            ]
+                        }
+                        ]
+                    });
+                    chart.render();
+                    
+                    }
+                    </script>
+                    </head>
+                    <body>
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+                    
+               </div>
             </div>
             <div class="box2">Horarios de salida</div>
             <div class="box3">Tardies</div>
@@ -39,7 +72,8 @@
         </div>
     </div>
     <footer>
-
+        <script src= "/script.js" ></script>
+        <script src="/chart.html"></script>
     </footer>
 </body>
 

@@ -2,7 +2,7 @@ document.querySelector(".entrada").addEventListener("click",entrada);
 document.querySelector(".hora") .addEventListener("click",hora);
 
 var entrada =[];
-var valores =[];
+var hora =[];
 
 function entrada(){
    let html = DocumentTimeline.querySelector('horarios de entrada').innerHTML;
