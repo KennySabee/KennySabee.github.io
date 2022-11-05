@@ -12,6 +12,13 @@ function entrada(){
 
 function showResults(){
     for (var i = document.querySelectorAll('.entrada').length -1;i >=0; i--){
-        document.querySelectorAll('.entrada')[i]
+        entrada.push(document.querySelectorAll('.entrada')[i].value);
+        hora.push(parseInt(document.querySelectorAll(".hora")[i].value)); 
     }
+    var data= [{
+        x:entrada,
+        y:hora,
+        type: "bar"
+    }];
+    plotly.newPlot("grafico",)
 }
