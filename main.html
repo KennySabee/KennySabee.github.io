@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Calendario escolar</title>
-    <link rel="stylesheet" href="./style.css" </head>
+    <script src= "/script.js" ></script>
+    <link rel="stylesheet" href="./style.css"/></head>
 
 <body>
     <aside>
@@ -17,7 +18,21 @@
         <div class="Intro">Horarios de clase</div>
         <div class="asignador">Asistencias</div>
         <div class="boxes">
-            <div class="box1">Horarios de entrada</div>
+            <div class="box1">Horarios de entrada
+               <form id="form-entra">
+                <div>
+                  <div>
+                    <input type="text"class="entrada"></input>
+                    <button class= "addDia">Dia</button>
+                  </div>
+                  <div>
+                    <input type="text"class="Hora"></input>
+                    <button class= "addHora">Hora</button>
+                  </div>
+                </div>
+               </form>
+            </div>
+
             <div class="box2">Horarios de salida</div>
             <div class="box3">Tardies</div>
 
