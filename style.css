@@ -13,7 +13,7 @@ body {
 
 .Intro {
     background-color: purple;
-    background-image: url(".../balon.jpg");
+    background-image: url("./calendario.jpg");
     height: 300px;
     width: 1700px;
     font-size: 25px;
