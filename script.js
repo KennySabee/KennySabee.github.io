@@ -10,7 +10,7 @@ function entrada(){
    document.querySelector("horarios de entrada").innerHTML= html + newHTML
 }
 
-function showResults(){
+function hora(){
     for (var i = document.querySelectorAll('.entrada').length -1;i >=0; i--){
         entrada.push(document.querySelectorAll('.entrada')[i].value);
         hora.push(parseInt(document.querySelectorAll(".hora")[i].value)); 
