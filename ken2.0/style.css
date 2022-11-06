@@ -1,0 +1,73 @@
+aside {
+    background-color: black;
+    color: white;
+    height: 2000px;
+    width: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Intro {
+    background-color: purple;
+    background-image: url("/calendario.jpg");
+    height: 300px;
+    width: 1700px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+.asignador {
+    background-color: gray;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+
+.tablero {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1 {
+    border: 1px solid;
+    height: 100px;
+    width: 566px;
+}
+
+.box2 {
+    border: 1px solid;
+    height: 100px;
+    width: 566px;
+}
+
+.box3 {
+    border: 1px solid;
+    height: 100px;
+    width: 566px;
+}
+
+
+@media (min-width: 700px) { 
+
+    
+ }
