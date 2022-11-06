@@ -1,70 +1,56 @@
-let personajesLabel = [],
-  especiesLabel = [],
-  generoLabel = [];
-
-
+let diaLabel = [],  
+  horaLabel = [];
 
 // GRAFICO DE CHART JS
-async function personajesChart() {
+async function horaEntradaChart() {
   await getApiData();
 
-  const grafico = document.getElementById("myChart").getContext("2d");
+  const grafico = document.getElementById('myChart').getContext("2d");
   const myChart = new Chart(grafico, {
-    type: 'pie',
-    data: {
-        datasets: [{
+    type: "bar",
         data: {
-            personajesLabel
-        }
-        }]
-    }
-    })}
+          labels: diaLabel,
+          datasets: [
+            {
+              label: "Dia",
+              data: diaLabel,
+              backgroundColor: "blue",
+              borderColor: "rgba(255, 99, 132, 1)",
     
+            },
+            {
+              label: "Hora entrada",
+              data: horaLabel,
+              backgroundColor: "pink",
+              borderColor: "rgba(255, 99, 132, 1)",
     
+            },
+          ],
+        },
+        options: {
+          tooltips: {
+            mode: "index",
+          },
+        },
+      });
+      }
 
-personajesChart();
-//     type: "bar",
-//     data: {
-//       labels: personajesLabel,
-//       datasets: [
-//         {
-//           label: "Especie",
-//           data: especiesLabel,
-//           backgroundColor: "blue",
-//           borderColor: "rgba(255, 99, 132, 1)",
-          
-//         },
-//         {
-//           label: "Género",
-//           data: generoLabel,
-//           backgroundColor: "pink",
-//           borderColor: "rgba(255, 99, 132, 1)",
-          
-//         },
-//       ],
-//     },
-//     options: {
-//       tooltips: {
-//         mode: "index",
-//       },
-//     },
-//   });
-  
+horaEntradaChart();
 
-// COMIENZO CON LA API FETCH DE RICK Y MORTY
+// se cambio a la api de dbjson NO SALE LOS GRAFICOS GRAFIA EN BLANCO 
 async function getApiData() {
-    const url = "https://rickandmortyapi.com/api/character";
+    const url = "http://localhost:3000/Hora_entrada";
     const response = await fetch(url);
     const barChartData = await response.json();
     //FUNCION MAP
-    const character = barChartData.results.map((x) => x.name);
-    const species = barChartData.results.map((x) => x.species);
-    const gender = barChartData.results.map((x) => x.gender);
-  
-    console.log(character, species);
-    personajesLabel = character;
-  especiesLabel = species;
-  generoLabel = gender;
-}
-console.log(personajesLabel)
-  
+   
+    const horaEntrada = barChartData.map((x) => x.value);
+    const dia = barChartData.map((x) => x.description);
+      
+    console.log(horaEntrada, dia);
+    horaLabel = horaEntrada;
+    diaLabel = dia;
+    
+  }
+  console.log(diaLabel)
+
